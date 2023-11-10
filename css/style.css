@@ -1,10 +1,11 @@
-*{
+*
+{
     margin: 0;
     padding: 0;
     text-decoration: none;
-    list-style:none;
-
-    /* border: 1px solid black; */
+    list-style: none;
+    
+    /* border: 1px solid cyan; */
 }
 
 /* Colour Palate */
@@ -17,52 +18,134 @@
     --color5: #fff1bf;
 }
 
-body{
+body
+{
     background-color: var(--color1);
     color: var(--color5);
+    font-family: 'Poppins', sans-serif;
 }
 
-#top{
+#top
+{
     display: flex;
-    padding: 0px 10px;
-    justify-content:space-between;
+    padding:  10px;
+    justify-content: space-between;
     align-items: center;
-    height: 50px;
     box-sizing: border-box;
-    position: relative;
+    position: sticky;
+    top: -10px;
     background-color: rgba(0, 0, 0, 0.345);
     flex-wrap: wrap;
-    /* color: white; */
+    z-index: 10;
+    font-size: 1.2rem;
 }
 
-#top #left{
-    /* border: 1px solid indigo; */
+#top #left
+{
+    font-size: 2rem;
     display: flex;
-}
-#top #right{
-    /* border: 1px solid blue; */
-    display: flex;
-}
-#top #right nav{
-    /* border: 1px solid green; */
-    display: flex;
-}
-#top #right nav ul{
-    /* border: 1px solid yellow; */
-    display: flex;
-}
-#top #right nav ul li{
-    /* border: 1px solid orange; */
-    display: flex;
-}
-#top #right nav ul li a{
-    /* border: 1px solid red; */
-    color:var(--color5) ;
-    margin: 10px;
 }
 
-#container{
-    height: 1000px;
+#top #right
+{
+    display: flex;
+}
+
+#top #right nav
+{
+    display: flex;
+}
+
+#top #right nav ul
+{
+    display: flex;
+}
+
+#top #right nav ul li
+{
+    display: flex;
+}
+
+#top #right nav ul li a
+{
+    color: var(--color5);
+    margin:0 25px 0 0;
+}
+
+#container
+{
+    display: flex;
+    flex-direction:column;
     text-align: justify;
-    padding: 10px;
+}
+
+#profile
+{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#profile img
+{
+    width: 45vw;
+    z-index: -1;
+}
+
+#profile-name
+{
+    text-align: justify;
+    color: var(--color4);
+    font-size: 3vw;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#profile-name #fname
+{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid white;
+    letter-spacing: .15em;
+    margin: 0 auto;
+    animation:
+        typing 2s steps(40, end) 1s 1 normal both,
+        blink-car .75s step-end infinite ;
+}
+#profile-name #lname
+{
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: .15em solid transparent;
+    letter-spacing: .15em;
+    margin: 0 auto;
+    animation:
+        typing 1s steps(40) 3s 1 normal both,
+        blink-car .75s step-end infinite ;
+}
+
+@keyframes typing
+{
+    from
+    {
+        width: 0;
+    }
+
+    to
+    {
+        width: 100%;
+    }
+}
+@keyframes blink-car
+{
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+#content{
+    background-color: white;
+    color: black;
+    padding: 5vw;
+    border-radius: 6vw 6vw 0 0;
+    height: 1000px;
 }
