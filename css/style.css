@@ -20,10 +20,27 @@
 
 body
 {
-    background-color: var(--color1);
     color: var(--color5);
     font-family: 'Poppins', sans-serif;
     font-size: 1.2rem;
+    background-color: var(--color1);
+}
+
+body::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    height:100vw;
+    background: url("../images/bg1.jpg");
+    background-color: var(--color1);
+    background-size:contain;
+    background-attachment:fixed;
+    background-blend-mode:multiply;
+    opacity: 0.5;
 }
 
 #top
@@ -41,10 +58,13 @@ body
     font-size: 1.2rem;
 }
 
+
 #top #left
 {
     font-size: 2rem;
     display: flex;
+    margin-right: 25px;
+    font-weight: bold;
 }
 
 #top #right
@@ -74,6 +94,11 @@ body
     margin: 0 25px 0 0;
 }
 
+#top #right nav ul li .active
+{
+    color: #e7b43a;
+}
+
 #top #right nav ul li a:hover
 {
     color: white;
@@ -92,7 +117,7 @@ body
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 60px;
     text-align: left;
 }
 
@@ -115,6 +140,7 @@ body
     overflow: hidden;
     white-space: nowrap;
     border-right: .15em solid white;
+    font-weight: bolder;
     letter-spacing: .15em;
     margin: 0 auto;
     animation:
@@ -128,6 +154,7 @@ body
     white-space: nowrap;
     border-right: .15em solid transparent;
     letter-spacing: .15em;
+    font-weight: bolder;
     margin: 0 auto;
     animation:
         typing 2s steps(40) 3s 1 normal both,
@@ -169,4 +196,18 @@ body
     padding: 5vw;
     border-radius: 6vw 6vw 0 0;
     height: 1000px;
+}
+
+#p1,
+#p2
+{
+    font-size: 2.5vw;
+    text-align: justify;
+    font-weight: bold;
+}
+
+
+#welc
+{
+    font-size: 1.1rem;
 }
