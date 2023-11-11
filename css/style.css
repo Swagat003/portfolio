@@ -22,6 +22,7 @@ body
 {
     color: var(--color5);
     font-family: 'Poppins', sans-serif;
+    /* font-family: "Roboto", sans-serif; */
     font-size: 1.2rem;
     background-color: var(--color1);
 }
@@ -39,7 +40,7 @@ body::before
     background-color: var(--color1);
     background-size: contain;
     background-attachment: fixed;
-    background-blend-mode:screen;
+    background-blend-mode: screen;
     opacity: 0.2;
 }
 
@@ -204,7 +205,7 @@ body::before
     border-radius: 6vw 6vw 0 0;
     flex-grow: 1;
     min-height: 100vh;
-    height:max-content;
+    height: max-content;
 
 }
 
@@ -220,4 +221,134 @@ body::before
 #welc
 {
     font-size: 1.1rem;
+}
+
+
+/* footer */
+footer
+{
+    background: #0f0d00;
+    font-family: "Roboto", sans-serif;
+    color: #f1faee;
+    padding: 32px;
+}
+
+footer .social img
+{
+    height: 30px;
+}
+
+footer .footer-container
+{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+footer .footer-container .footer-top
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer .logo
+{
+    font-size: 36px;
+    font-weight: 800;
+}
+
+footer .footer-container a
+{
+    color: #f1faee;
+    text-decoration: none;
+}
+
+footer .footer-container a:hover
+{
+    text-decoration: underline;
+}
+
+footer .footer-container ul
+{
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+footer .footer-container ul li
+{
+    margin: 10px 0;
+}
+
+footer .footer-container h3.quick-links-h3::before
+{
+    content: url("../images/quick-links-icon.png");
+    filter: sepia();
+}
+
+footer .footer-container h3.contact-h3::before
+{
+    content: url("../images/contact-icon.png");
+    filter: sepia();
+}
+
+footer .footer-container h3
+{
+    position: relative;
+}
+
+footer .footer-container h3::before
+{
+    position: absolute;
+    transform: translate(-24px, -5px);
+}
+
+footer .footer-bottom
+{
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+}
+
+footer .social a:hover
+{
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+footer .social a
+{
+    margin: 0 16px;
+    display: inline-block;
+    transition: all 500ms;
+}
+
+@media (max-width: 850px)
+{
+    footer .footer-container .footer-top
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer .social img
+    {
+        height: 30px;
+    }
+}
+
+@media (max-width: 600px)
+{
+    footer .footer-container .footer-top
+    {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    footer .footer-bottom .copyright
+    {
+        font-size: 16px;
+    }
 }
