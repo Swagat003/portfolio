@@ -89,6 +89,12 @@ body::before
     display: flex;
     /* width: 100%; */
 }
+#top #right nav .menu-btn i
+{
+    display: none;
+    font-size: 2rem;
+    /* width: 100%; */
+}
 
 #top #right nav ul
 {
@@ -121,6 +127,54 @@ body::before
 {
     color: white;
     text-shadow: 0 0 5px #e7b33abe, 0 0 10px #e7b33abe, 0 0 20px #e7b33abe;
+}
+#top input[type="checkbox"]{
+    display: none;
+}
+
+@media (max-width:600px) {
+    #top #right nav .menu-btn i{
+        /* color: white; */
+        display: block;
+    }
+    #click:checked ~ .menu-btn i::before{
+        content:"\f00d";
+        /* color: white; */
+    }
+    #top #right nav ul{
+        width: 100%;
+        position: fixed;
+        top: -40px;
+        left: -100%;
+        /* left: 0; */
+        z-index: -1;
+        /* background: var(--color1); */
+        background-color: #111;
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+        height: 100dvh;
+        transition: all 0.3s ease;
+    }
+    #top #right nav ul li{
+        width: 100%;
+        margin: 40px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #top #right nav ul li a{
+        /* width: 100%; */
+        /* margin: 40px 0; */
+        display: block;
+    }
+    #click:checked ~ ul{
+        left: 0;
+        /* background-color: #945922; */
+        /* color: white; */
+    }
 }
 
 /* --------------------------------section-------------------------------- */

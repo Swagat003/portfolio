@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Swagat</title>
 </head>
 
@@ -20,8 +21,12 @@
     <div id="left"><a href="#container">SP.</a></div>
     <div id="right">
       <nav>
+        <input type="checkbox"  id="click">
+        <label for="click" class="menu-btn">
+          <i class="fa fa-bars"></i>
+        </label>
         <ul class="menu">
-          <li><a href="#profile" class="">Home</a></li>
+          <li><a href="#profile" class="active">Home</a></li>
           <li><a href="#about" class="">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#footer">Contact</a></li>
@@ -72,19 +77,19 @@
 
           <ul>
             <li>
-              <a href="index.html">Home</a>
+              <a href="#profile">Home</a>
             </li>
 
             <li>
-              <a href="projects.html">Projects</a>
+              <a href="#projects">Projects</a>
             </li>
 
             <li>
-              <a href="resume.html">Resume</a>
+              <a href="#about">About</a>
             </li>
 
             <li>
-              <a href="contact.html">Contact</a>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>
