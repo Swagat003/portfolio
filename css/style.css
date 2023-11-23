@@ -18,6 +18,10 @@
     --color5: #fff1bf;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body
 {
     color: var(--color5);
@@ -68,6 +72,11 @@ body::before
     display: flex;
     margin-right: 25px;
     font-weight: bold;
+}
+#top #left a
+{
+    color: var(--color5);
+    
 }
 
 #top #right
