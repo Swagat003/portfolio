@@ -470,4 +470,24 @@ footer .social a
     {
         font-size: 16px;
     }
+
+    footer .social
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        /* height: 30px; */
+    }
+}
+
+@media (max-width:300px)
+{
+
+    #top *,
+    footer *,
+    #container *
+    {
+        overflow: hidden;
+    }
 }
