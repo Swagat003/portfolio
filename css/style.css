@@ -333,14 +333,19 @@ body::before
 #about .row .col1
 {
     flex-basis: 50%;
+    max-width: 50dvw;
     margin: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 #about .row .col2
 {
     flex-basis: 40%;
     min-width: 250px;
-    flex-grow: 1;
+    flex-grow: 2;
 }
 
 #about .row .col1 img
@@ -371,12 +376,13 @@ body::before
 
 #skills .row .col2
 {
-    /* flex-grow: 1; */
-    max-width: 50vw;
+    flex-grow: 1;
+    max-width: 50dvw;
     display: flex;
     flex-basis: 50%;
     /* margin: 0 30px; */
     align-items: center;
+    /* justify-content: center; */
 }
 
 
@@ -387,31 +393,34 @@ body::before
 }
 
 #skill-container{
-    padding:0 5% 0 0;
+    /* padding:0 5% 0 0; */
     display: flex;
     flex-wrap: wrap;
+    gap:3px;
     /* justify-content:center; */
 }
 .code-lang{
     font-family: 'Consolas';
+    line-height: 1.75rem;
     display: flex;
-    /* flex-grow: 1; */
-    /* max-width:fit-content; */
+    flex-grow: 1;
+    max-width:calc(13ch);
+    min-width: 5ch;
     align-items: center;
     justify-content: center;
     width: fit-content;
     padding: 0 5px;
     margin: 5px;
-    border: 2px solid rgb(63, 63, 63);
-    color: rgb(63, 63, 63);
-    border-radius: 5px;
+    border: 2px solid rgb(85, 85, 85);
+    color: rgb(85, 85, 85);
+    border-radius: 10px;
     transition:all 0.125s ;
 }
 .code-lang:hover{
     scale: 1.15;
     /* background-color: #909090;
     color: white; */
-    /* margin:0 1px; */
+    /* margin:0 7px; */
     /* padding:0 8px; */
 }
 /* ---------------------------------footer--------------------------------- */
