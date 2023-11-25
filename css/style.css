@@ -349,27 +349,27 @@ body::before
 }
 
 /* -----------------skills---------------------- */
-#skils
+#skills
 {
     padding: 80px 10%;
 
 }
 
-#skils .row
+#skills .row
 {
     display: flex;
     justify-content: space-evenly;
     /* flex-wrap:wrap-reverse; */
 
 }
-#skils .row .col1
+#skills .row .col1
 {
     flex-basis: 40%;
     min-width: 250px;
     flex-grow: 1;
 }
 
-#skils .row .col2
+#skills .row .col2
 {
     /* flex-grow: 1; */
     max-width: 50vw;
@@ -380,13 +380,13 @@ body::before
 }
 
 
-#skils .row .col2 img
+#skills .row .col2 img
 {
     width: 100%;
     margin:0 20px;
 }
 
-#skil-container{
+#skill-container{
     padding:0 5% 0 0;
     display: flex;
     flex-wrap: wrap;
