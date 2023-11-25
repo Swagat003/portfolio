@@ -140,7 +140,7 @@ body::before
     display: none;
 }
 
-@media (max-width:600px)
+@media (max-width:660px)
 {
     #top #right nav .menu-btn i
     {
@@ -348,7 +348,63 @@ body::before
     width: 100%;
 }
 
+/* -----------------skills---------------------- */
+#skils
+{
+    padding: 80px 10%;
 
+}
+
+#skils .row
+{
+    display: flex;
+    justify-content: space-evenly;
+    /* flex-wrap:wrap-reverse; */
+
+}
+#skils .row .col1
+{
+    flex-basis: 40%;
+    min-width: 250px;
+    flex-grow: 1;
+}
+
+#skils .row .col2
+{
+    /* flex-grow: 1; */
+    max-width: 50vw;
+    display: flex;
+    flex-basis: 50%;
+    /* margin: 0 30px; */
+    align-items: center;
+}
+
+
+#skils .row .col2 img
+{
+    width: 100%;
+    margin:0 20px;
+}
+
+#skil-container{
+    padding:0 5% 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content:center; */
+}
+.code-lang{
+    display: flex;
+    /* flex-grow: 1; */
+    /* max-width:fit-content; */
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 0 3px;
+    margin: 5px;
+    border: 2px solid rgb(63, 63, 63);
+    color: rgb(63, 63, 63);
+    border-radius: 5px;
+}
 
 /* ---------------------------------footer--------------------------------- */
 footer
