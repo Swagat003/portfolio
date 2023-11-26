@@ -404,7 +404,7 @@ body::before
     line-height: 1.75rem;
     display: flex;
     flex-grow: 1;
-    max-width:calc(13ch);
+    max-width:13ch;
     min-width: 5ch;
     align-items: center;
     justify-content: center;
