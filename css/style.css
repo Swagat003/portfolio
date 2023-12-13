@@ -477,7 +477,7 @@ body::before
 }
 #projects #cards .box:hover{
    width: 50vw;
-   scale: 1.2;
+   scale: 1.3;
    position:relative;
    /* z-index: 10; */
    box-shadow: #1111116d 0px 0px 50px 20px;
@@ -488,11 +488,18 @@ body::before
     #projects #cards{
         flex-wrap:wrap;
         flex-grow: 1;
+        box-sizing: border-box;
+        justify-content: left;
     }
     #projects #cards .box{
         flex-grow: 1;
-        width: 100%;
+        margin: 2.5%;
+        width: 45%;
+        max-width: 45%;
         height: 180px;
+    }
+    #projects #cards .box:hover{
+        height: 200px;
     }
 }
 
