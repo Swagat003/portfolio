@@ -295,13 +295,14 @@ body::before
     border-radius: 50px;
     line-height: 1.2rem;
     padding: 10px;
-    margin: 10px;
     font-weight: bold;
     font-size: 1.05rem;
     transition: all 0.3s;
 }
+.btn a{
+    margin: 10px;
+}
 .btn button:hover{
-    /* color:  white; */
     scale: 1.1;
 }
 
