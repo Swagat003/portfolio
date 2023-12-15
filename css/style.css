@@ -485,7 +485,7 @@ body::before
     width: 20vw;
     justify-content: end;
     transition: all 0.5s;
-    box-shadow: black 0px -8vw 6vw inset;
+    box-shadow: black 0px -9vw 6vw -1vw inset;
     color: white;
     box-sizing: border-box;
     overflow: hidden;
@@ -510,7 +510,7 @@ body::before
     width: 50vw;
     scale: 1.3;
     position: relative;
-    box-shadow: #1111116d 0px 0px 50px 20px, black 0 -12vw 8vw 0 inset;
+    box-shadow: #1111116d 0px 0px 50px 20px, black 0 -14vw 9vw -2vw inset;
 }
 
 #projects #cards .box:hover .hide
@@ -560,11 +560,14 @@ body::before
         width: 45%;
         max-width: 45%;
         height: 180px;
+        box-shadow: black 0px -60px 40px -10px inset;
+
     }
 
     #projects #cards .box:hover
     {
         height: 200px;
+        box-shadow: #1111116d 0px 0px 50px 20px, black 0 -120px 90px -20px inset;
     }
 }
 
