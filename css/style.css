@@ -361,7 +361,8 @@ body::before
 /* ----------------------about----------------------- */
 #about
 {
-    padding: 80px 0;
+    padding: 70px 0px;
+    margin: 5% 0;
 
 }
 
@@ -399,7 +400,9 @@ body::before
 /* -----------------skills---------------------- */
 #skills
 {
-    padding: 80px 10%;
+    padding: 70px 0;
+    /* padding: 0 10%; */
+    margin: 5% 0;
 
 }
 
@@ -416,6 +419,10 @@ body::before
     flex-basis: 40%;
     min-width: 250px;
     flex-grow: 1;
+}
+
+#skills .row .colmid{
+    width: 10%;
 }
 
 #skills .row .col2
@@ -479,6 +486,8 @@ body::before
 {
     display: flex;
     flex-direction: column;
+    margin: 5% 0;
+    padding: 70px 0px;
 }
 
 #projects #cards
@@ -584,6 +593,12 @@ body::before
     }
 }
 
+
+/* ----------------------------- contacts------------------------------- */
+#contact{
+    margin: 5% 0;
+    padding: 70px 0px;
+}
 /* ---------------------------------footer--------------------------------- */
 footer
 {
