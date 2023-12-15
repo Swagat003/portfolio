@@ -533,27 +533,27 @@ body::before
 
 #projects #cards #pro1
 {
-    background: url('../images/pro1.png') no-repeat top center /cover;
+    background: gray url('../images/pro1.png') no-repeat top center /cover;
 }
 
 #projects #cards #pro2
 {
-    background: url('../images/pro2.png') no-repeat top center /cover;
+    background:gray url('../images/pro2.png') no-repeat top center /cover;
 }
 
 #projects #cards #pro3
 {
-    background: url('../images/pro3.png') no-repeat top center /cover;
+    background:gray url('../images/pro3.png') no-repeat top center /cover;
 }
 
 #projects #cards #pro4
 {
-    background: url('../images/pro4.png') no-repeat top center /cover;
+    background:gray url('../images/pro4.png') no-repeat top center /cover;
 }
 
 #projects #cards #pro5
 {
-    background: url('../images/pro5.png') no-repeat top center /cover;
+    background:gray url('../images/pro5.png') no-repeat top center /cover;
 }
 
 @media (max-width:660px)
