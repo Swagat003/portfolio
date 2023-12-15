@@ -496,25 +496,29 @@ body::before
     background-color: gray;
     margin: 10px;
     padding: 10px;
-    /* border: 1px solid black; */
     border-radius: 20px;
     height: 25vw;
     width: 20vw;
-    /* align-items:end; */
     justify-content: end;
     transition: all 0.5s;
     box-shadow: black 0px -8vw 6vw inset;
     color: white;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+.box .hide
+{
+    display: none;
+    font-size: 1rem;
+
 }
 
 .box a
 {
     text-decoration: none;
     color: white;
-    display: none;
-    font-size: 1rem;
-    /* transition: all 0.5s; */
+    display: contents;
 }
 
 #projects #cards .box:hover
@@ -522,13 +526,12 @@ body::before
     width: 50vw;
     scale: 1.3;
     position: relative;
-    /* z-index: 10; */
     box-shadow: #1111116d 0px 0px 50px 20px, black 0 -12vw 8vw 0 inset;
 }
 
-#projects #cards .box:hover a
+#projects #cards .box:hover .hide
 {
-    display:contents !important;
+    display: contents !important;
 }
 
 #projects #cards #pro1
@@ -538,22 +541,22 @@ body::before
 
 #projects #cards #pro2
 {
-    background:gray url('../images/pro2.png') no-repeat top center /cover;
+    background: gray url('../images/pro2.png') no-repeat top center /cover;
 }
 
 #projects #cards #pro3
 {
-    background:gray url('../images/pro3.png') no-repeat top center /cover;
+    background: gray url('../images/pro3.png') no-repeat top left /cover;
 }
 
 #projects #cards #pro4
 {
-    background:gray url('../images/pro4.png') no-repeat top center /cover;
+    background: gray url('../images/pro4.png') no-repeat top left /cover;
 }
 
 #projects #cards #pro5
 {
-    background:gray url('../images/pro5.png') no-repeat top center /cover;
+    background: gray url('../images/pro5.png') no-repeat top center /cover;
 }
 
 @media (max-width:660px)
