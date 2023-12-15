@@ -528,7 +528,7 @@ body::before
 
 #projects #cards .box:hover a
 {
-    display: block !important;
+    display:contents !important;
 }
 
 #projects #cards #pro1
