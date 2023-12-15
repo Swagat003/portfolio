@@ -93,30 +93,24 @@ body::before
 #top #right nav
 {
     display: flex;
-    /* width: 100%; */
 }
 
 #top #right nav .menu-btn i
 {
     display: none;
     font-size: 2rem;
-    /* width: 100%; */
 }
 
 #top #right nav ul
 {
     display: flex;
     justify-content: space-between;
-    /* max-width: 400px; */
 }
 
 #top #right nav ul li
 {
     display: flex;
-    /* flex-shrink: 1; */
-    /* width: 100px; */
     justify-content: center;
-    /* flex-grow: 1; */
 }
 
 #top #right nav ul li a
@@ -160,11 +154,8 @@ body::before
         position: fixed;
         top: -40px;
         left: 100%;
-        /* left: 0; */
         z-index: -1;
-        /* background: var(--color1); */
         background-color: #111;
-        /* display: flex; */
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -184,8 +175,6 @@ body::before
 
     #top #right nav ul li a
     {
-        /* width: 100%; */
-        /* margin: 40px 0; */
         display: block;
     }
 
@@ -194,19 +183,12 @@ body::before
         left: 40% !important;
     }
 
-    /* #top #right nav ul li a:active
-    {
-       
-    } */
 }
 
 /* --------------------------------section-------------------------------- */
 #container
 {
-    /* display: flex;
-    flex-direction: column; */
     text-align: justify;
-    /* height:max-content; */
 }
 
 #profile
@@ -215,7 +197,7 @@ body::before
     justify-content: space-evenly;
     align-items: center;
     padding: 0 60px;
-    padding-top: 40px;
+    padding-top: 20px;
     text-align: left;
 }
 
@@ -402,7 +384,6 @@ body::before
 #skills
 {
     padding: 70px 0;
-    /* padding: 0 10%; */
     margin: 5% 0;
 
 }
@@ -432,9 +413,7 @@ body::before
     max-width: 50dvw;
     display: flex;
     flex-basis: 50%;
-    /* margin: 0 30px; */
     align-items: center;
-    /* justify-content: center; */
 }
 
 
@@ -446,11 +425,10 @@ body::before
 
 #skill-container
 {
-    /* padding:0 5% 0 0; */
+    padding: 0 5%;
     display: flex;
     flex-wrap: wrap;
     gap: 3px;
-    /* justify-content:center; */
 }
 
 .code-lang
@@ -475,10 +453,6 @@ body::before
 .code-lang:hover
 {
     scale: 1.15;
-    /* background-color: #909090;
-    color: white; */
-    /* margin:0 7px; */
-    /* padding:0 8px; */
 }
 
 
@@ -745,7 +719,6 @@ footer .social a
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
-        /* height: 30px; */
     }
 }
 
