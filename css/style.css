@@ -106,6 +106,10 @@ body::before
     margin: 4px 15px;
     cursor: pointer;
 }
+#top #right #them-icon::selection
+{
+    background-color: transparent;
+}
 
 #top #right nav
 {
