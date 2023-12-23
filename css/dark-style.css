@@ -5,14 +5,14 @@
 
 .dark-content
 {
-    background-color: #171720 !important;
-    color: white !important;
+    background-color: rgb(19 19 21) !important;
+    color: rgb(220, 220, 220) !important;
     box-shadow: #ffffff52 0px 0px 40px 0px !important;
 }
 
 .dark-code-lang
 {
-    color: rgb(144, 144, 144) !important;
+    color: rgb(180, 180, 180) !important;
     border-color: rgb(144, 144, 144) !important;
 }
 
