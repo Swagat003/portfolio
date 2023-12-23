@@ -90,6 +90,23 @@ body::before
     display: flex;
 }
 
+
+.material-symbols-outlined
+{
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+
+#top #right #them-icon
+{
+    margin: 4px 15px;
+    cursor: pointer;
+}
+
 #top #right nav
 {
     display: flex;
@@ -136,7 +153,7 @@ body::before
     display: none;
 }
 
-@media (max-width:660px)
+@media (max-width:740px)
 {
     #top #right nav .menu-btn i
     {
@@ -403,7 +420,8 @@ body::before
     flex-grow: 1;
 }
 
-#skills .row .colmid{
+#skills .row .colmid
+{
     width: 10%;
 }
 
@@ -573,10 +591,12 @@ body::before
 
 
 /* ----------------------------- contacts------------------------------- */
-#contact{
+#contact
+{
     margin: 5% 0;
     padding: 70px 0px;
 }
+
 /* ---------------------------------footer--------------------------------- */
 footer
 {

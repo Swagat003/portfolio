@@ -1,0 +1,23 @@
+.dark-body
+{
+    background-color: black !important;
+}
+
+.dark-content
+{
+    background-color: #0d0d12 !important;
+    color: white !important;
+    box-shadow: #ffffff52 0px 0px 40px 0px !important;
+}
+
+.dark-code-lang
+{
+    color: rgb(144, 144, 144) !important;
+    border-color: rgb(144, 144, 144) !important;
+}
+
+.dark-them-icon
+{
+    font-variation-settings:
+        'FILL' 1 !important;
+}
