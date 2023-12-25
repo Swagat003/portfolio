@@ -207,6 +207,18 @@ body::before
 }
 
 /* --------------------------------section-------------------------------- */
+@keyframes scroll-animation {
+    from{
+        opacity: 0;
+        /* scale: 0.5; */
+        transform: translateY(5vh);
+    }
+    to{
+        opacity: 1;
+        /* scale: 1; */
+    }
+}
+
 #container
 {
     text-align: justify;
@@ -367,7 +379,6 @@ body::before
 {
     padding: 70px 0px;
     margin: 5% 0;
-
 }
 
 #about .row
@@ -387,6 +398,9 @@ body::before
     align-items: center;
     justify-content: center;
     flex-grow: 1;
+    animation: scroll-animation both;
+    animation-timeline: view(80vh 0px);
+    animation-range: contain 0% contain 100%;
 }
 
 #about .row .col2
@@ -394,6 +408,9 @@ body::before
     flex-basis: 40%;
     min-width: 250px;
     flex-grow: 2;
+    animation: scroll-animation both;
+    animation-timeline: view(80vh 0px);
+    animation-range: contain 0% contain 50%;
 }
 
 #about .row .col1 img
@@ -422,6 +439,9 @@ body::before
     flex-basis: 40%;
     min-width: 250px;
     flex-grow: 1;
+    /* animation: scroll-animation both;
+    animation-timeline: view(80vh 0px);
+    animation-range: contain 0% contain 50%; */
 }
 
 #skills .row .colmid
@@ -436,6 +456,7 @@ body::before
     display: flex;
     flex-basis: 50%;
     align-items: center;
+    
 }
 
 
@@ -443,6 +464,9 @@ body::before
 {
     width: 100%;
     margin: 0 20px;
+    animation: scroll-animation both;
+    animation-timeline: view(90vh 0px);
+    /* animation-range: contain 0% contain 100%; */
 }
 
 #skill-container
@@ -470,6 +494,9 @@ body::before
     color: rgb(85, 85, 85);
     border-radius: 10px;
     transition: all 0.125s;
+    animation: scroll-animation both;
+    animation-timeline: view(80vh 0px);
+    animation-range: contain 0% contain 50%;
 }
 
 .code-lang:hover
@@ -511,6 +538,9 @@ body::before
     color: white;
     box-sizing: border-box;
     overflow: hidden;
+    animation: scroll-animation both;
+    animation-timeline: view(90vh 0px);
+    /* animation-range: contain 0% contain 100%; */
 }
 
 .box .hide
@@ -599,6 +629,9 @@ body::before
 {
     margin: 5% 0;
     padding: 70px 0px;
+    animation: scroll-animation both;
+    animation-timeline: view(90vh 0px);
+    animation-range: contain 0% contain 50%;
 }
 
 /* ---------------------------------footer--------------------------------- */
