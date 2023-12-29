@@ -603,6 +603,10 @@ body::before
 {
     background: gray url('../images/pro5.png') no-repeat top center /cover;
 }
+#projects #cards #pro6
+{
+    background: gray url('../images/pro6.png') no-repeat top center /cover;
+}
 
 @media (max-width:660px)
 {
