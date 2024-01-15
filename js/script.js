@@ -1,5 +1,10 @@
 let them = document.querySelector('#them-icon');
 
+var metaColor = document.createElement('meta');
+metaColor.name = 'theme-color';
+metaColor.content = '#945922';
+document.head.appendChild(metaColor);
+
 them.addEventListener('click', (evt) => {
     let them_icon = document.querySelector('#them-icon');
     let body = document.querySelector('body');
