@@ -521,11 +521,38 @@ body::before
     padding: 70px 0px;
 }
 
+/* #cards
+{
+    display: flex;
+    overflow-x: visible;
+    overflow-y: scroll;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+}
+
+#cards::-webkit-scrollbar
+{
+    display: none;
+}
+
+.box
+{
+    scroll-snap-align: center;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 152px;
+    height: 152px;
+    border: 1px solid black;
+} */ 
+
+
 #projects #cards
 {
     display: flex;
     align-items: center;
     justify-content: center;
+    /* overflow-y: scroll;
+    white-space: nowrap; */
 }
 
 #projects #cards .box
@@ -547,7 +574,7 @@ body::before
     overflow: hidden;
     animation: scroll-animation both;
     animation-timeline: view(90vh 0px);
-    /* animation-range: contain 0% contain 100%; */
+    animation-range: contain 0% contain 100%;
 }
 
 .box .hide
