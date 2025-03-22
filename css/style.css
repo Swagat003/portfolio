@@ -51,6 +51,32 @@ body::before
 
 /* ------------------------------header---------------------------- */
 
+#header{
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    top: -10px;
+}
+#anoucement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black !important;
+    padding: 10px;
+    /* z-index: 10; */
+}
+#anoucement h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: red !important;
+    text-align: center;
+}
+#anoucement p{
+    font-size: 1rem !important;
+    color: black !important;
+}
 #top
 {
     display: flex;
